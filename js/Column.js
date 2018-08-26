@@ -1,3 +1,4 @@
+ 
 function Column(id, name) {
   var self = this;
 
@@ -26,7 +27,6 @@ function Column(id, name) {
     );
 
     //MOJA FUNCKJA MODYFIKACJI KOLUMNY
-
     columnTitle.click(function() {
       self.renameColumn();
     });
@@ -109,27 +109,27 @@ Column.prototype = {
           .append(columnRename());
         self.element.removeClass(oldClass).addClass(newClass);
       },
-      error: function(jqXHR, textStatus, errorThrown) {
-        alert(
-          "An error occurred... Look at the console (F12 or Ctrl+Shift+I, Console tab) for more information!"
-        );
+      // error: function(jqXHR, textStatus, errorThrown) {
+      //   alert(
+      //     "An error occurred... Look at the console (F12 or Ctrl+Shift+I, Console tab) for more information!"
+      //   );
 
-        $("#result").html(
-          "<p>status code: " +
-            jqXHR.status +
-            "</p><p>errorThrown: " +
-            errorThrown +
-            "</p><p>jqXHR.responseText:</p><div>" +
-            jqXHR.responseText +
-            "</div>"
-        );
-        console.log("jqXHR:");
-        console.log(jqXHR);
-        console.log("textStatus:");
-        console.log(textStatus);
-        console.log("errorThrown:");
-        console.log(errorThrown);
-      }
+      //   $("#result").html(
+      //     "<p>status code: " +
+      //       jqXHR.status +
+      //       "</p><p>errorThrown: " +
+      //       errorThrown +
+      //       "</p><p>jqXHR.responseText:</p><div>" +
+      //       jqXHR.responseText +
+      //       "</div>"
+      //   );
+      //   console.log("jqXHR:");
+      //   console.log(jqXHR);
+      //   console.log("textStatus:");
+      //   console.log(textStatus);
+      //   console.log("errorThrown:");
+      //   console.log(errorThrown);
+      // }
     });
   }
 };

@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Indie+Flower");
 * { box-sizing: border-box; font-family: "Indie Flower", cursive; }
 
+ul { min-height: 100px; }
+
 .board .create-column { background-color: rgba(0, 255, 255, 0); border: none; font-size: x-large; }
 
 .board .create-column:hover { cursor: pointer; color: #0c7b35; transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -ms-transform: scale(1.2); -o-transform: scale(1.2); }
