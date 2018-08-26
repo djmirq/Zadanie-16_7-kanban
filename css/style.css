@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+* { box-sizing: border-box; font-family: "Indie Flower", cursive; }
+
+.board .create-column { background-color: rgba(0, 255, 255, 0); border: none; font-size: x-large; }
+
+.board .create-column:hover { cursor: pointer; color: #0c7b35; transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -ms-transform: scale(1.2); -o-transform: scale(1.2); }
+
+h1 { text-align: center; background-color: #ff5b0082; font-family: "Indie Flower", cursive; border-radius: 15px; color: white; }
+
+h2 .tooltiptext { margin-top: 8px; margin-left: 10px; font-size: 10px; visibility: hidden; width: 60px; background-color: #ff000054; color: #fff; text-align: center; border-radius: 6px; padding: 2px 0; /* Position the tooltip */ position: absolute; z-index: 1; }
+
+h2:hover { cursor: pointer; }
+
+h2:hover .tooltiptext { visibility: visible; }
+
+.column-container { display: flex; flex-flow: wrap; }
+
+.column-container .column { width: calc(33.33% - 10px); min-width: 100px; border-left: 6px solid #cccccc; background: #e4b5000d; border-radius: 20px; padding: 10px; margin: 5px; }
+
+.column-container .column .column-card-list { list-style: none; padding-left: 2px; padding-right: 2px; }
+
+.column-container .column .column-card-list li { padding: 5px; border-radius: 10px; margin-bottom: 10px; }
+
+.column-container .column .column-card-list li button { background-color: rgba(0, 255, 255, 0); border: none; float: right; }
+
+.column-container .column .column-card-list li button:hover { cursor: pointer; color: #b30a0a; transform: scale(2); -webkit-transform: scale(2); -moz-transform: scale(2); -ms-transform: scale(2); -o-transform: scale(2); }
+
+.column-container .column .column-card-list li:nth-child(odd) { background: #f9ecec; }
+
+.column-container .column .column-card-list li:nth-child(even) { background: #efefef; }
+
+.column-container .column .column-title { border-bottom: 1px solid #cccccc; padding-left: 10px; margin-top: 0; color: sandybrown; }
+
+.column-container .column .column-buttons { background-color: beige; padding-left: 5px; padding-right: 5px; width: calc(100% - 4px); margin-left: 2px; border-radius: 10px; }
+
+.column-container .column .column-buttons .btn-delete { background-color: rgba(0, 255, 255, 0); color: #b30a0a; border: none; float: right; }
+
+.column-container .column .column-buttons .btn-delete:hover { cursor: pointer; transform: scale(2); -webkit-transform: scale(2); -moz-transform: scale(2); -ms-transform: scale(2); -o-transform: scale(2); }
+
+.column-container .column .column-buttons .add-card { background-color: rgba(0, 255, 255, 0); border: none; font-weight: bolder; }
+
+.column-container .column .column-buttons .add-card:hover { cursor: pointer; color: #0c7b35; transform: scale(1.2); -webkit-transform: scale(1.2); -moz-transform: scale(1.2); -ms-transform: scale(1.2); -o-transform: scale(1.2); }
+
+.column-container .todo { border-left: 6px solid #fa0303; }
+
+.column-container .todo .column-title { color: #fa0303; }
+
+.column-container .doing { border-left: 6px solid #ffbc00; }
+
+.column-container .doing .column-title { color: #ffbc00; }
+
+.column-container .done { border-left: 6px solid #2ad200; }
+
+.column-container .done .column-title { color: #2ad200; }
+
+/*# sourceMappingURL=style.css.map */

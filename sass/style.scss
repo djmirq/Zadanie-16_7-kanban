@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+
+* {
+  box-sizing: border-box;
+  font-family: "Indie Flower", cursive;
+}
+
+.board {
+  .create-column {
+    background-color: rgba(0, 255, 255, 0);
+    border: none;
+    font-size: x-large;
+    &:hover {
+      cursor: pointer;
+      color: rgb(12, 123, 53);
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+      -o-transform: scale(1.2);
+    }
+  }
+}
+h1 {
+  text-align: center;
+  background-color: #ff5b0082;
+  font-family: "Indie Flower", cursive;
+  border-radius: 15px;
+  color: white;
+}
+h2 {
+  .tooltiptext {
+    margin-top: 8px;
+    margin-left: 10px;
+    font-size: 10px;
+    visibility: hidden;
+    width: 60px;
+    background-color: #ff000054;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 2px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+  }
+  &:hover {
+    cursor: pointer;
+    .tooltiptext {
+      visibility: visible;
+    }
+  }
+}
+
+.column-container {
+  display: flex;
+  flex-flow: wrap;
+  .column {
+    width: calc(33.33% - 10px);
+    min-width: 100px;
+    border-left: 6px solid rgb(204, 204, 204);
+    background: #e4b5000d;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+
+    .column-card-list {
+      list-style: none;
+      padding-left: 2px;
+      padding-right: 2px;
+      li {
+        padding: 5px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+        button {
+          background-color: rgba(0, 255, 255, 0);
+          border: none;
+          float: right;
+          &:hover {
+            cursor: pointer;
+            color: rgb(179, 10, 10);
+            transform: scale(2);
+            -webkit-transform: scale(2);
+            -moz-transform: scale(2);
+            -ms-transform: scale(2);
+            -o-transform: scale(2);
+          }
+        }
+      }
+      li:nth-child(odd) {
+        background: #f9ecec;
+      }
+      li:nth-child(even) {
+        background: #efefef;
+      }
+    }
+    .column-title {
+      border-bottom: 1px solid rgb(204, 204, 204);
+      padding-left: 10px;
+      margin-top: 0;
+      color: sandybrown;
+    }
+    .column-buttons {
+      background-color: beige;
+      padding-left: 5px;
+      padding-right: 5px;
+      width: calc(100% - 4px);
+      margin-left: 2px;
+      border-radius: 10px;
+      .btn-delete {
+        background-color: rgba(0, 255, 255, 0);
+        color: rgb(179, 10, 10);
+        border: none;
+        float: right;
+        &:hover {
+          cursor: pointer;
+          transform: scale(2);
+          -webkit-transform: scale(2);
+          -moz-transform: scale(2);
+          -ms-transform: scale(2);
+          -o-transform: scale(2);
+        }
+      }
+      .add-card {
+        background-color: rgba(0, 255, 255, 0);
+        border: none;
+        font-weight: bolder;
+        &:hover {
+          cursor: pointer;
+          color: rgb(12, 123, 53);
+          transform: scale(1.2);
+          -webkit-transform: scale(1.2);
+          -moz-transform: scale(1.2);
+          -ms-transform: scale(1.2);
+          -o-transform: scale(1.2);
+        }
+      }
+    }
+  }
+  .todo {
+    border-left: 6px solid #fa0303;
+    .column-title {
+      color: #fa0303;
+    }
+  }
+  .doing {
+    border-left: 6px solid #ffbc00;
+    .column-title {
+      color: #ffbc00;
+    }
+  }
+  .done {
+    border-left: 6px solid #2ad200;
+    .column-title {
+      color: #2ad200;
+    }
+  }
+}
